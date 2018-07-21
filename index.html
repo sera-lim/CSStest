@@ -25,24 +25,33 @@
       body {
         margin: 0;
       }
+      #grid{
+        display: grid;
+        grid-template-columns: 150px 1fr;
+      }
+      #contents{
+        padding-left: 50px;
+      }
     </style>
   </head>
   <body>
     <h1><a href="index.html">CSS</a></h1>
-      <ol>
-        <li><a href="CSS_Excercise01.html">Exercise_01</a></li>
-        <li><a href="CSS_Excercise02.html">Exercise_02</a></li>
-        <li><a href="CSS_Excercise03.html">Exercise_03</a></li>
-      </ol>
-    <div>
-      <h2>Welcome!</h2>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      Exercise가 끝났다면?<br>
-      <a href="CSS_Box_Model.html" style="text-decoration: underline; color:gray;">CSS Box Model</a> 공부하러 가기 > <br>
-    </div>
+      <div id="grid">
+        <ol>
+          <li><a href="CSS_Excercise01.html">Exercise_01</a></li>
+          <li><a href="CSS_Excercise02.html">Exercise_02</a></li>
+          <li><a href="CSS_Excercise03.html">Exercise_03</a></li>
+        </ol>
+        <div id="contents">
+          <h2>Welcome!</h2>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          Exercise가 끝났다면?<br>
+          <a href="CSS_Box_Model.html" style="text-decoration: underline; color:gray;">CSS Box Model</a> 공부하러 가기 > <br>
+        </div>
+      </div>
   </body>
 </html>

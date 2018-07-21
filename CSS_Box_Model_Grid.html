@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>CSS Box Model</title>
+    <style>
+      h1 {
+        font-size: 45px;
+        text-align: center;
+      }
+      a {
+        color:black;
+        text-decoration: none;
+      }
+      h3 {
+        border-width:5px;
+        border-color:red;
+        border-style:solid;
+      }
+      #inline {
+        border-width:5px;
+        border-color:red;
+        border-style:solid;
+      }
+      div {
+        border:5px solid gray;
+      }
+      span {
+        border:5px solid gray;
+      }
+      #bigdiv{
+        border:5px solid pink;
+      }
+      #columns{
+        border:5px solid pink;
+        display:grid;
+        grid-template-columns: 150px 1fr;
+      }
+      #fr11{
+        border:5px solid pink;
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+      }
+      #fr21{
+        border:5px solid pink;
+        display:grid;
+        grid-template-columns: 2fr 1fr;
+      }
+    </style>
+  </head>
+  <body>
+    <h1><a href="CSS_Box_Model.html">CSS - Box Model</a></h1>
+      <ol>
+        <li><a href="CSS_Box_Model_Ex01.html">Exercise_01</a></li>
+        <li><a href="CSS_Box_Model_Ex02.html">Exercise_02</a></li>
+        <li><a href="CSS_Box_Model_Ex03.html">Exercise_03</a></li>
+        <li><a href="CSS_Box_Model_Ex04.html">Exercise_04</a></li>
+        <li><a href="CSS_Box_Model_Ex05.html">Exercise_05</a></li>
+        <li><a href="CSS_Box_Model_Ex06.html">Exercise_06</a></li>
+        <li><a href="CSS_Box_Model_Grid.html">Grid</a></li>
+      </ol>
+      <h2>Grid</h2>
+      <ul>
+
+        <li>div는 block lebel element(cc. span은 inline element)다.<br><br>
+          <div>NAVIGATION</div>
+          <span>ARTICLE</span>
+        <br><br></li>
+
+        <li>NAVIGATION과 ARTICLE 두 div를 하나의 큰 div로 묶을 수 있다.<br><br>
+          <div id="bigdiv">
+            <div>NAVIGATION</div>
+            <div>ARTICLE</div>
+          </div>
+        <br><br></li>
+
+        <li>display:grid; 로 하고, grid-template-columns: 150px 1fr; 로 하면 구분된 두 영역이 column으로 배치되며, 왼쪽 칼럼의 width는 150px, 오른쪽 칼럼은 나머지 전체를 차지하게 된다.<br><br>
+          <div id="columns">
+            <div>NAVIGATION</div>
+            <div>ARTICLE</div>
+          </div>
+        <br><br></li>
+
+        <li>grid-template-columns: 1fr 1fr; 면 좌컬럼 우컬럼이 1:1로 나눠지고, 2fr 1fr이면 좌컬럼과 우컬럼이 2:1의 비율로 나뉘어진다.<br><br>
+          <div id="fr11">
+            <div>NAVIGATION</div>
+            <div>ARTICLE</div>
+          </div>
+          <br>
+          <div id="fr21">
+            <div>NAVIGATION</div>
+            <div>ARTICLE</div>
+          </div>
+        <br><br></li>
+
+      </ul>
+  </body>
+</html>
